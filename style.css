@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+   font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+   background-color: #110a12 !important;
+   color: #ffefff;
+}
+
+.py-10 {
+   padding-top: 8em !important;
+   padding-bottom: 8em !important;
+}
+
+.pb-9 {
+   padding-bottom: 2em !important;
+}
+
+.mb-10 {
+   margin-bottom: 9em !important;
+}
+
+.pb-10 {
+   padding-bottom: 9em !important;
+}
+
+/* Navbar */
+
+.navbar {
+   z-index: 999 !important;
+}
+
+.navbar-bg {
+   background-color: #000109;
+}
+
+.navbar-link-css {
+   color: #ffefff !important;
+   font-weight: bold !important;
+   font-size: 15px !important;
+}
+
+.navbar-call-link {
+   color: #ffefff !important;
+}
+
+.navbar-call-span {
+   font-size: 12px !important;
+}
+
+.navbar-call-paragraph {
+   font-weight: bold;
+}
+
+.navbar-collapse {
+   transition: 0.5s !important;
+}
+
+/* End Navbar */
+
+/* Hero */
+
+.hero-bg {
+   background-color: #110a12 !important;
+}
+
+.hero-image {
+   position: relative;
+   background-color: #110a12 !important;
+}
+
+.hero-image::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(Images/Background-Hero.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.hero-content {
+   position: relative;
+}
+
+.hero-title {
+   font-family: 'Tourney', sans-serif;
+   color: #ffefff;
+   font-size: 50px;
+}
+
+.hero-paragraph {
+   margin-top: 30px;
+   font-family: 'Tourney', sans-serif;
+   color: #ffefff;
+}
+
+.hero-btn {
+   margin-top: 20px;
+   font-size: 20px;
+   background-color: #df146f;
+   font-family: 'Tourney', sans-serif;
+   color: #ffefff;
+}
+
+.hero-image-col {
+   height: 30em;
+}
+
+/* End Hero */
+
+/* Input & Slider */
+
+.input-image {
+   position: relative;
+   background-color: #110a12 !important;
+}
+
+.input-image::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(Images/Input-&-Slider-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.input-content {
+   position: relative;
+}
+
+.input-css {
+   border: 0px solid white !important;
+   background-color: #00010900;
+   width: 100% !important;
+   font-size: 18px !important;
+}
+
+.input-css:focus-visible {
+   outline: 0px !important;
+}
+
+.input-div-css {
+   width: 75%;
+   background-color: #ffefff;
+   border-radius: 50rem !important;
+   padding: 1rem;
+   position: relative;
+}
+
+.input-search-css {
+   height: 50px !important;
+}
+
+.input-popular-div {
+   width: 80%;
+   position: absolute;
+   bottom: -20%;
+   left: 9%;
+   background: rgb(215, 10, 132);
+   background: linear-gradient(
+      90deg,
+      rgba(215, 10, 132, 1) 0%,
+      rgba(81, 18, 127, 1) 100%
+   );
+   color: #ffefff !important;
+   border-radius: 50rem !important;
+}
+
+.input-popular-title {
+   font-weight: bolder;
+   margin-bottom: 0px !important;
+   font-size: 17px;
+}
+
+.input-popular-paragraph {
+   font-weight: bolder;
+   margin-bottom: 0px !important;
+   word-spacing: 0.09cm;
+}
+
+.slider h1 {
+   text-align: center;
+   font-family: 'Tourney', sans-serif;
+   font-size: 50px;
+   font-weight: 500;
+   margin: 80px 0 10px 0;
+   color: #df146f;
+}
+
+@keyframes slide {
+   from {
+      transform: translateX(0);
+   }
+   to {
+      transform: translateX(-100%);
+   }
+}
+
+.logos {
+   overflow: hidden;
+   width: 92%;
+   padding: 60px 0;
+   background: rgba(255, 255, 255, 0);
+   white-space: nowrap;
+   position: relative;
+}
+
+.logos:before,
+.logos:after {
+   position: absolute;
+   top: 0;
+   width: 250px;
+   height: 100%;
+   content: '';
+   z-index: 2;
+}
+
+.logos:before {
+   left: 0;
+   background: linear-gradient(to left, rgba(255, 255, 255, 0), #110a12);
+}
+
+.logos:after {
+   right: 0;
+   background: linear-gradient(to right, rgba(255, 255, 255, 0), #110a12);
+}
+
+.logos:hover .logos-slide {
+   animation-play-state: paused;
+}
+
+.logos-slide {
+   display: inline-block;
+   animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+   height: 30px;
+   margin: 0 40px;
+   filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
+      hue-rotate(0deg);
+}
+
+.logo-text-title {
+   font-family: 'Tourney', sans-serif;
+   font-size: 50px;
+   color: #ffefff;
+}
+
+.logo-text-paragraph {
+   font-family: 'Tourney', sans-serif;
+   width: 70%;
+   color: #ffefff;
+}
+
+.logo-text-link {
+   font-family: 'Tourney', sans-serif;
+   color: #df146f;
+}
+
+.text-color-link {
+   color: #ffefff;
+}
+
+/* End Slider */
+
+/* Influencer Marketing */
+
+.marketing-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 40px;
+}
+
+.marketing-col1-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 30px;
+}
+
+.marketing-col1-para {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+}
+
+.marketing-col1-link {
+   font-family: 'Tourney', sans-serif;
+   color: #df146f;
+}
+
+.marketing-col1-icon-color {
+   color: #ffefff;
+}
+
+/* End Influencer Marketing */
+
+/* Advantage */
+
+.advantage-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 40px;
+}
+
+.advantage-col1-para {
+   position: absolute;
+   bottom: 10%;
+   right: 0%;
+   z-index: 9;
+   color: #000000;
+   font-weight: bold;
+   background-color: #ffffffa0;
+}
+
+.advantage-title-span {
+   color: #df146f;
+   font-family: 'Tourney', sans-serif !important;
+}
+
+/* End advantage */
+
+/* Create */
+
+.create-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 40px;
+}
+
+.create-title-span {
+   font-family: 'Tourney', sans-serif !important;
+   color: #df146f;
+}
+
+.create-bg {
+   background-color: #1d2349 !important;
+}
+
+/* End Create */
+
+/* Plans */
+
+.plans-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 80px;
+}
+
+.plans-bg-col1 {
+   background-color: #1b1d1e;
+   box-shadow: 0px -3px 0px 0px #d8fe5c;
+}
+
+.plans-col-1-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ff1570;
+   font-size: 25px;
+}
+
+.plans-col-1-para {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 13px;
+}
+
+.plans-col-1-price {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ff1570;
+   font-size: 80px;
+}
+
+.plans-col-1-price-para {
+   font-family: 'Tourney', sans-serif !important;
+   background-color: #f9d78f;
+   color: #000000;
+   border-radius: 50rem !important;
+}
+
+.plans-col-2-price-para {
+   font-family: 'Tourney', sans-serif !important;
+   background-color: #d8fe5c;
+   color: #000000;
+   border-radius: 50rem !important;
+}
+
+.plans-col-3-price-para {
+   font-family: 'Tourney', sans-serif !important;
+   background-color: #3cfda1;
+   color: #000000;
+   border-radius: 50rem !important;
+}
+
+/* End Plans */
+
+/* Why Ai Influencer */
+
+.why-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 40px;
+}
+
+.why-title-span {
+   font-family: 'Tourney', sans-serif !important;
+   color: #df146f;
+}
+
+.why-col1-bg {
+   background-color: #3cfda1;
+}
+
+.why-col1-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #000;
+}
+
+.why-col1-p {
+   font-family: 'Tourney', sans-serif !important;
+   color: #000;
+}
+
+.why-col2-bg {
+   background-color: #838aff;
+}
+
+.why-col3-bg {
+   background-color: #fd3cea;
+}
+
+.why-col4-bg {
+   background-color: #ffffff;
+}
+
+.why-color-icon {
+   color: #df146f;
+}
+/* End Why Ai Influencer */
+
+/* Frequently Asked Questions */
+
+.asked-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #000000;
+   font-size: 40px;
+}
+
+.asked-title-span {
+   font-family: 'Tourney', sans-serif !important;
+   color: #df146f;
+}
+
+.accordion-collapse {
+   transition: 0.7s !important;
+}
+
+.accordion-button:focus {
+   box-shadow: none !important;
+}
+
+.accordion-button {
+   font-family: 'Arimo', sans-serif !important;
+   font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+   color: #df146f !important;
+   border-bottom: 2px solid #ff1570 !important;
+   background-color: unset !important;
+   box-shadow: none !important;
+}
+
+.accordion-item {
+   border-top-left-radius: var(--bs-accordion-inner-border-radius);
+   border-top-right-radius: var(--bs-accordion-inner-border-radius);
+   border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+   border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+}
+.accordion-item {
+   border: 2px solid #ff1570 !important;
+}
+
+/* End Frequently Asked Questions */
+
+/* Discover */
+
+.discover-title {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   font-size: 40px;
+}
+
+.discover-days-btn {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   background-color: #df146f;
+   border: 1px solid #ffffff;
+}
+
+.discover-chat-btn {
+   font-family: 'Tourney', sans-serif !important;
+   color: #ffefff;
+   background-color: #2cef92;
+   border: 1px solid #ffffff;
+}
+
+/* End Discover */
+
+/* Footer */
+
+.footer-image {
+   position: relative;
+   background-color: #000109 !important;
+}
+
+.footer-image::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(Images/footer-background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.footer-content {
+   position: relative;
+}
+
+.footer-link {
+   color: #fff;
+   margin-bottom: 1rem !important;
+}
+
+.footer-link:hover {
+   text-decoration: none;
+   color: #fff;
+}
+
+.bg-news-div {
+   background-color: #ffffff4f;
+}
+
+.footer-newsletter-bg {
+   background-color: #00000000;
+   border: 1px solid #ffefff;
+   backdrop-filter: blur(10px);
+}
+
+.footer-news-btn {
+   background-color: #ffffff;
+   color: #000;
+}
+
+.footer-news-input:focus-visible {
+   outline: none !important;
+}
+
+.footer-news-input {
+   background-color: #00000000;
+}
+
+/* End Footer */
+
+/* MEDIA QUERY */
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+   .hero-title {
+      font-size: 30px;
+   }
+
+   .hero-paragraph {
+      font-size: 12px;
+   }
+
+   .hero-btn {
+      font-size: 16px;
+   }
+
+   .hero-image::before {
+      background-image: none;
+   }
+
+   .input-image::before {
+      background-image: none;
+   }
+
+   .input-div-css {
+      width: 100%;
+      padding: 0.5rem !important;
+   }
+
+   .input-css {
+      font-size: 13px !important;
+   }
+
+   .input-search-css {
+      height: 30px;
+   }
+
+   .input-popular-div {
+      width: 90%;
+      left: 5%;
+      bottom: -7%;
+   }
+
+   .input-popular-title {
+      font-size: 09px;
+   }
+
+   .input-popular-paragraph {
+      font-size: 08px;
+   }
+
+   .pb-10 {
+      padding-bottom: 1.5em !important;
+   }
+
+   .logos {
+      overflow: hidden;
+      width: 100%;
+      padding: 30px 0;
+      background: rgba(255, 255, 255, 0);
+      white-space: nowrap;
+      position: relative;
+   }
+
+   .slider h1 {
+      font-size: 30px;
+   }
+
+   .logos-slide img {
+      height: 25px;
+      margin: 0 40px;
+      filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
+         hue-rotate(0deg);
+   }
+
+   .logos:before,
+   .logos:after {
+      position: absolute;
+      top: 0;
+      width: 80px;
+      height: 100%;
+      content: '';
+      z-index: 2;
+   }
+
+   .logo-text-title {
+      font-family: 'Tourney', sans-serif;
+      font-size: 30px;
+      color: #ffefff;
+   }
+
+   .logo-text-paragraph {
+      font-size: 12px;
+      width: 100%;
+   }
+
+   .marketing-title {
+      font-size: 20px;
+   }
+
+   .marketing-col1-title {
+      font-size: 15px;
+   }
+
+   .marketing-col1-para {
+      font-size: 12px;
+   }
+
+   .advantage-title {
+      font-size: 30px;
+   }
+
+   .create-title {
+      font-size: 30px;
+   }
+
+   .discover-title {
+      font-size: 20px;
+   }
+
+   .discover-days-btn {
+      font-size: 12px;
+   }
+
+   .discover-chat-btn {
+      font-size: 12px;
+   }
+
+   .footer-news-fontSize{
+      font-size: 19px;
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+   .hero-title {
+      font-size: 30px;
+   }
+
+   .hero-image::before {
+      background-image: none;
+   }
+
+   .hero-paragraph {
+      font-size: 11px;
+   }
+
+   .hero-btn {
+      font-size: 14px;
+   }
+
+   .hero-image-col {
+      height: 25em;
+   }
+
+   .pb-10 {
+      padding-bottom: 1.5em !important;
+   }
+
+   .input-div-css {
+      width: 100%;
+   }
+
+   .input-image::before {
+      background-image: none;
+   }
+
+   .slider h1 {
+      font-size: 45px;
+   }
+
+   .logo-text-title {
+      font-family: 'Tourney', sans-serif;
+      font-size: 30px;
+      color: #ffefff;
+   }
+
+   .logo-text-paragraph {
+      font-size: 12px;
+      width: 90%;
+   }
+
+   .marketing-title {
+      font-size: 30px;
+   }
+
+   .marketing-col1-title {
+      font-size: 25px;
+   }
+
+   .discover-title {
+      font-size: 35px;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .hero-title {
+      font-size: 40px;
+   }
+
+   .hero-image::before {
+      background-image: none;
+   }
+
+   .input-image::before {
+      background-image: none;
+   }
+
+   .hero-paragraph {
+      font-size: 14px;
+   }
+
+   .hero-btn {
+      font-size: 16px;
+   }
+
+   .pb-10 {
+      padding-bottom: 1.5em !important;
+   }
+
+   .logo-text-title {
+      font-family: 'Tourney', sans-serif;
+      font-size: 40px;
+      color: #ffefff;
+   }
+
+   .logo-text-paragraph {
+      font-size: 12px;
+      width: 80%;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+   .hero-image::before {
+      background-image: none;
+   }
+
+   .input-image::before {
+      background-image: none;
+   }
+
+   .logo-text-title {
+      font-family: 'Tourney', sans-serif;
+      font-size: 40px;
+      color: #ffefff;
+   }
+
+   .logo-text-paragraph {
+      font-size: 15px;
+      width: 70%;
+   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   .logos:before,
+   .logos:after {
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 0;
+      content: '';
+      z-index: 2;
+   }
+}
