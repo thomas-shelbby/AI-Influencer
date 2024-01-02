@@ -10,6 +10,27 @@ body {
    color: #ffefff;
 }
 
+.body-image {
+   position: relative;
+   background-color: #110a12 !important;
+}
+
+.body-image::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(Images/Body-Background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.body-content {
+   position: relative;
+}
+
 .py-10 {
    padding-top: 8em !important;
    padding-bottom: 8em !important;
@@ -63,31 +84,6 @@ body {
 
 /* Hero */
 
-.hero-bg {
-   background-color: #110a12 !important;
-}
-
-.hero-image {
-   position: relative;
-   background-color: #110a12 !important;
-}
-
-.hero-image::before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url(Images/Background-Hero.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.hero-content {
-   position: relative;
-}
-
 .hero-title {
    font-family: 'Tourney', sans-serif;
    color: #ffefff;
@@ -98,6 +94,7 @@ body {
    margin-top: 30px;
    font-family: 'Tourney', sans-serif;
    color: #ffefff;
+   font-size: 20px;
 }
 
 .hero-btn {
@@ -115,27 +112,6 @@ body {
 /* End Hero */
 
 /* Input & Slider */
-
-.input-image {
-   position: relative;
-   background-color: #110a12 !important;
-}
-
-.input-image::before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-image: url(Images/Input-&-Slider-bg.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.input-content {
-   position: relative;
-}
 
 .input-css {
    border: 0px solid white !important;
@@ -207,7 +183,7 @@ body {
 
 .logos {
    overflow: hidden;
-   width: 92%;
+   width: 100%;
    padding: 60px 0;
    background: rgba(255, 255, 255, 0);
    white-space: nowrap;
@@ -246,8 +222,7 @@ body {
 .logos-slide img {
    height: 30px;
    margin: 0 40px;
-   filter: brightness(200%) contrast(0%) saturate(100%) blur(0px)
-      hue-rotate(0deg);
+   filter: invert(100%);
 }
 
 .logo-text-title {
@@ -260,11 +235,13 @@ body {
    font-family: 'Tourney', sans-serif;
    width: 70%;
    color: #ffefff;
+   font-size: 18px !important;
 }
 
 .logo-text-link {
    font-family: 'Tourney', sans-serif;
    color: #df146f;
+   font-size: 20px;
 }
 
 .text-color-link {
@@ -290,11 +267,13 @@ body {
 .marketing-col1-para {
    font-family: 'Tourney', sans-serif !important;
    color: #ffefff;
+   font-size: 20px;
 }
 
 .marketing-col1-link {
    font-family: 'Tourney', sans-serif;
    color: #df146f;
+   font-size: 20px;
 }
 
 .marketing-col1-icon-color {
@@ -369,7 +348,7 @@ body {
 .plans-col-1-para {
    font-family: 'Tourney', sans-serif !important;
    color: #ffefff;
-   font-size: 13px;
+   font-size: 18px;
 }
 
 .plans-col-1-price {
@@ -383,6 +362,7 @@ body {
    background-color: #f9d78f;
    color: #000000;
    border-radius: 50rem !important;
+   font-size: 20px;
 }
 
 .plans-col-2-price-para {
@@ -390,6 +370,7 @@ body {
    background-color: #d8fe5c;
    color: #000000;
    border-radius: 50rem !important;
+   font-size: 20px;
 }
 
 .plans-col-3-price-para {
@@ -397,6 +378,7 @@ body {
    background-color: #3cfda1;
    color: #000000;
    border-radius: 50rem !important;
+   font-size: 20px;
 }
 
 /* End Plans */
@@ -426,6 +408,7 @@ body {
 .why-col1-p {
    font-family: 'Tourney', sans-serif !important;
    color: #000;
+   font-size: 20px;
 }
 
 .why-col2-bg {
@@ -700,7 +683,7 @@ body {
       font-size: 12px;
    }
 
-   .footer-news-fontSize{
+   .footer-news-fontSize {
       font-size: 19px;
    }
 }
@@ -828,7 +811,7 @@ body {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
    .logos:before,
    .logos:after {
       position: absolute;
@@ -837,5 +820,27 @@ body {
       height: 0;
       content: '';
       z-index: 2;
+   }
+}
+
+@media only screen and (min-width: 1400px) {
+   .logos:before,
+   .logos:after {
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 0;
+      content: '';
+      z-index: 2;
+      width: 250px !important;
+      height: 100% !important;
+   }
+
+   .accordion-body {
+      font-size: 20px;
+   }
+
+   .accordion-header {
+      font-size: 25px;
    }
 }
