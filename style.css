@@ -305,6 +305,15 @@ body {
    font-family: 'Tourney', sans-serif !important;
 }
 
+.advantage-glow:before {
+   content: '';
+   position: absolute;
+   box-shadow: 0 0 100px 150px #df146f;
+   top: 50%;
+   left: 40%;
+   border-radius: 50% !important;
+}
+
 /* End advantage */
 
 /* Create */
